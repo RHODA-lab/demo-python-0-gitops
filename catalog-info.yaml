@@ -1,0 +1,21 @@
+apiVersion: backstage.io/v1alpha1
+kind: Resource
+metadata:
+  name: rarnaud-python-0-gitops
+  description: This is GitOps manifest for rarnaud-python-0   
+  links:
+    - url: https://www.redhat.com/en/solutions/trusted-software-supply-chain
+      title: Trusted Secure Supply Chain 
+      icon: dashboard
+      type: admin-dashboard
+  annotations:    
+    argocd/app-name: rarnaud-python-0
+    backstage.io/kubernetes-id: rarnaud-python-0 
+    backstage.io/techdocs-ref: dir:. 
+    janus-idp.io/tekton: rarnaud-python-0   
+spec:
+  type: gitops
+  owner: user:guest 
+  lifecycle: experimental
+  dependsOn:
+    - component:rarnaud-python-0

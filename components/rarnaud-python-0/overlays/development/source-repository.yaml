@@ -1,0 +1,6 @@
+apiVersion: "pipelinesascode.tekton.dev/v1alpha1"
+kind: Repository
+metadata:
+  name: rarnaud-python-0-repository
+spec:
+  url: https://github.com/RHODA-lab/demo-python-0
